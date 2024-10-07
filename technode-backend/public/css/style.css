@@ -1,0 +1,32 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap'); */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+ 
+  * {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  body {
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  
