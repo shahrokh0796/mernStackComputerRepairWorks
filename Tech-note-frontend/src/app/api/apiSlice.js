@@ -3,7 +3,6 @@ import { setCredentials } from "../../features/auth/authSlice";
 
 
 const baseQuery = fetchBaseQuery({
-    // baseUrl: 'http://localhost:3500',
     baseUrl: 'https://misterfasterrepairs.onrender.com',
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
@@ -17,9 +16,6 @@ const baseQuery = fetchBaseQuery({
 });
 
 const baseQuesryWithReauth = async (args, api, extraOptions) => {
-    // console.log(args, " <--args");
-    // console.log(api, " <--api");
-    // console.log( extraOptions, " < --- extraOptions");
     let result = await baseQuery(args, api, extraOptions);
 
     // If you want handle other status codes, too
